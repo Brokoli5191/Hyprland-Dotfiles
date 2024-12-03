@@ -40,6 +40,7 @@ Programs used in this config:
  - `hyprlauncher`
  - `waybar`
  - `swaybg`
+ - `swaync`
  - `hyprshot`
  - `hyprlock`
  - `wlogout`
