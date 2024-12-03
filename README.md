@@ -24,12 +24,30 @@
 </details>
 
 
+
 # 👀 Showcasee
  <details open>
   <summary>Preview</summary>
    <img src="/pictures/screenshot.png">
    <img src="/pictures/screenshot2.png">
  </details>
+
+
+
+# 🔧 Installation
+ - Download the installation.sh script
+ - Give the script permission `chmod +x installation.sh`
+ - Run the script `./installation.sh`
+
+ **OR do it manuallly**
+ 
+ - **BACKUP YOUR OLD CONFIGURAION**
+ - Install dependencies.
+ - Copy
+   - `.config`, `.local` to home folder
+   - Folders in `.local/share/icons` to your `/usr/share/icons`
+   - Stuff in `Import manually` folder if you need them
+
 
 
 # ✅ Dependencies
@@ -46,14 +64,6 @@ Programs used in this config:
  - `wlogout`
  - `afterglow cursors`
 
-
-# 🔧 General instructions
- - **BACKUP YOUR OLD CONFIGURAION**
- - Install dependencies.
- - Copy
-   - `.config`, `.local` to home folder
-   - Folders in `.local/share/icons` to your `/usr/share/icons`
-   - Stuff in `Import manually` folder if you need them
 
 
 # 👻 Wallpaper
