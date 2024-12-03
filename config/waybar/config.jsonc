@@ -1,0 +1,201 @@
+{
+	"layer": "bottom",
+	"position": "top",
+	"margin-top": 10,
+	"height": 40,
+	"width": 1860,
+	"spacing": 4,
+
+
+
+	"modules-left": [
+		"custom/drun",
+		"hyprland/workspaces",
+		"cava"
+	],
+	"modules-center": [
+		"clock",
+		"clock#2",
+		"custom/notify"
+	],
+	"modules-right": [
+		"custom/updicon",
+		"custom/upd",
+		"network",
+		"network#2",
+		"custom/langicon",
+		"hyprland/language",
+		"wireplumber",
+		"wireplumber#2",
+		"custom/notification",
+		"custom/power"
+	],
+
+
+
+	"custom/drun": {
+		"format": "   ",
+		"tooltip": false,
+		"on-click": "hyprlauncher"
+	},
+	"hyprland/workspaces": {
+		"format": "{icon}",
+		"on-scroll-up": "hyprctl dispatch workspace r-1",
+		"on-scroll-down": "hyprctl dispatch workspace r+1",
+		"on-click": "activate",
+		"format-icons": {
+			"urgent": "",
+			"1": "Ⅰ",
+			"2": "Ⅱ",
+			"3": "Ⅲ",
+			"4": "Ⅳ",
+			"5": "Ⅴ",
+			"6": "Ⅵ",
+			"7": "Ⅶ",
+			"8": "Ⅷ",
+			"9": "Ⅸ",
+			"10": "Ⅹ"
+		},
+		"tooltip": false,
+		"active-only": false,
+		"persistent-workspaces": {
+			"*": 5
+		}
+	},
+	"tray": {
+		"spacing": 20,
+		"icon-size": 25
+	},
+	"cava": {},
+
+
+
+	"clock": {
+		"format": "{:%R}",
+		"on-click": "gnome-calendar",
+		"tooltip": false
+	},
+	"clock#2": {
+		"format": "{:%A, %b %d %Y}",
+		"on-click": "gnome-calendar",
+		"tooltip": false
+	},
+	"custom/notify": {
+		"tooltip": false,
+		"format": "{icon}",
+		"format-icons": {
+			"notification": "<span foreground='red'><sup></sup></span>",
+			"none": "",
+			"dnd-notification": "<span foreground='red'><sup></sup></span>",
+			"dnd-none": "",
+			"inhibited-notification": "<span foreground='red'><sup></sup></span>",
+			"inhibited-none": "",
+			"dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+			"dnd-inhibited-none": ""
+		},
+		"return-type": "json",
+		"exec-if": "which swaync-client",
+		"exec": "swaync-client -swb",
+		"on-click": "swaync-client -t -sw",
+		"on-click-right": "swaync-client -d -sw",
+		"escape": true
+	},
+
+
+
+	"custom/updicon": {
+		"format": "󰣇/󰮯",
+		"return-type": "json",
+		"exec-if": "which waybar-updates",
+		"exec": "waybar-updates",
+		"on-click": "kitty -e ~/.config/scripts/upd.sh"
+	},
+	"custom/upd": {
+		"format": "{icon}{0}",
+		"return-type": "json",
+		"format-icons": {
+			"updated": ""
+		},
+		"exec-if": "which waybar-updates",
+		"exec": "waybar-updates",
+		"on-click": "kitty -e ~/.config/scripts/upd.sh"
+	},
+	"network": {
+		"format": "{ifname}",
+		"format-wifi": "{icon}",
+		"format-ethernet": "󰌘",
+		"format-disconnected": "󰌙", //An empty format will hide the module.
+		"tooltip-format": "",
+		"tooltip-format-wifi": " {bandwidthUpBytes} |  {bandwidthDownBytes}",
+		"tooltip-format-ethernet": "{ifname} 󰌘",
+		"tooltip-format-disconnected": "Disconnected",
+		"max-length": 50,
+		"format-icons": [
+			"󰤯",
+			"󰤟",
+			"󰤢",
+			"󰤥",
+			"󰤨"
+		],
+		"on-click": "iwgtk"
+	},
+	"network#2": {
+		"format": "{ifname}",
+		"format-wifi": "{essid}",
+		"format-ethernet": "{ipaddr}/{cidr}",
+		"format-disconnected": "none",
+		"tooltip-format": "",
+		"tooltip-format-wifi": " {bandwidthUpBytes} |  {bandwidthDownBytes}",
+		"tooltip-format-ethernet": " {bandwidthUpBytes} |  {bandwidthDownBytes}",
+		"tooltip-format-disconnected": "NOT CONNECTED DAMMIT",
+		"on-click": "iwgtk"
+	},
+	"custom/langicon": {
+		"format": "",
+		"on-click": "hyprctl switchxkblayout gaming-kb-gaming-kb prev",
+		"on-scroll-up": "hyprctl switchxkblayout gaming-kb-gaming-kb prev",
+		"on-scroll-down": "hyprctl switchxkblayout gaming-kb-gaming-kb prev",
+		"tooltip": false
+	},
+	"hyprland/language": {
+		"format": "{short}",
+		"on-click": "hyprctl switchxkblayout gaming-kb-gaming-kb prev", //REPLACE gaming-kb-gaming-kb WITH YOUR KEYBOARD (hyprctl devices)
+		"on-scroll-up": "hyprctl switchxkblayout gaming-kb-gaming-kb prev",
+		"on-scroll-down": "hyprctl switchxkblayout gaming-kb-gaming-kb prev"
+	},
+	"wireplumber": {
+		"format": "{icon}",
+		"format-muted": "",
+		"max-volume": 150,
+		"scroll-step": 5,
+		"format-icons": {
+			"alsa_output.pci-0000_00_1f.3.analog-stereo": "",
+			"alsa_output.pci-0000_00_1f.3.analog-stereo": "",
+			"default": [
+				"",
+				""
+			]
+		},
+		"on-click-right": "wpctl set-mute @DEFAULT_SINK@ toggle"
+	},
+	"wireplumber#2": {
+		"format": "{volume}%",
+		"format-muted": "muted",
+		"max-volume": 150,
+		"scroll-step": 5,
+		"format-icons": {
+			"alsa_output.pci-0000_00_1f.3.analog-stereo": "",
+			"alsa_output.pci-0000_00_1f.3.analog-stereo": "",
+			"default": [
+				"",
+				""
+			]
+		},
+		"on-click-right": "wpctl set-mute @DEFAULT_SINK@ toggle"
+	},
+	"custom/power": {
+		"format": "  ⏻  ",
+		"tooltip": false,
+		"on-click": "wlogout"
+	},
+}
