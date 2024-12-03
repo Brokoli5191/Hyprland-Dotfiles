@@ -25,15 +25,17 @@
 
 
 # 👀 Showcasee
-
-
-   <a>
-    <img src="/pictures/screenshot.png">
-   </a>
+ <details open>
+  <summary>Preview</summary>
+     
+  - <img src="/pictures/screenshot.png">
+  -
+  
+ </details>
 
 ---
 
-# ✅ Depennndencies
+# ✅ Dependencies
 
 
 
