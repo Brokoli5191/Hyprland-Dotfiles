@@ -27,19 +27,21 @@
 # 👀 Showcasee
  <details open>
   <summary>Preview</summary>
-     
    <img src="/pictures/screenshot.png">
-  
-  
+   <img src="/pictures/screenshot2.png">
  </details>
 
 
 # ✅ Dependencies
-
-
-
-
-
+Programs used in this config:
+ - `hyprland`
+ - `kitty`
+ - `nautilus`
+ - `hyprlauncher`
+ - `waybar`
+ - `swaybg`
+ - `hyprshot`
+ - `afterglow cursors`
 
 
 # 🔧 General instructions
@@ -51,10 +53,18 @@
    - Stuff in `Import manually` folder if you need them
 
 
+# 👻 Wallpaper
+ - The wallpaper was made with [Wallpaper generator](https://demon000.github.io/archwg/) by demon000
+ - As alternative you can use [arch-wallpaper-maker](https://github.com/felipefacundes/arch-wallpaper-maker) by felipefacundes
+
+
 # 🙏 Attribution
  - Copied a lot from [End-4's dotfiles](https://github.com/end-4/dots-hyprland)
- - Thanks to the people at r/unixporn
+ - Thanks to demon000 for [Wallpaper generator](https://demon000.github.io/archwg/)
+ - Thanks to all the devs (Hyprland, all used applications)
+ - Thanks to the people at r/unixporn for the inspiration
  - Maybe more, but I might not remember them all.. Still, thanks.
+
 
 # 🌟 stonks
 - _thank you_
@@ -62,5 +72,5 @@
 [![Stars](https://starchart.cc/Brokoli5191/Hyprland-Dotfiles.svg?variant=adaptive)](https://starchart.cc/Brokoli5191/Hyprland-Dotfiles)
 
 # 💡 Some inspirations
- - Other hyprland configs, r/unixporn
+ - Other hyprland configs
 
