@@ -28,7 +28,7 @@
 
 
    <a>
-    <img src="/pictures/screenshot.png)">
+    <img src="/pictures/screenshot.png">
    </a>
 
 ---
