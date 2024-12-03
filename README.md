@@ -33,7 +33,6 @@
   
  </details>
 
----
 
 # ✅ Dependencies
 
@@ -42,7 +41,6 @@
 
 
 
----
 
 # 🔧 General instructions
  - **BACKUP YOUR OLD CONFIGURAION**
@@ -51,8 +49,7 @@
    - `.config`, `.local` to home folder
    - Folders in `.local/share/icons` to your `/usr/share/icons`
    - Stuff in `Import manually` folder if you need them
- 
----
+
 
 # 🙏 Attribution
  - Copied a lot from [End-4's dotfiles](https://github.com/end-4/dots-hyprland)
