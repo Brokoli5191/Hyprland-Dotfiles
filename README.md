@@ -41,6 +41,8 @@ Programs used in this config:
  - `waybar`
  - `swaybg`
  - `hyprshot`
+ - `hyprlock`
+ - `wlogout`
  - `afterglow cursors`
 
 
