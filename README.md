@@ -42,7 +42,7 @@
  **OR do it manuallly**
  
  - **BACKUP YOUR OLD CONFIGURAION**
- - Install dependencies.
+ - Install dependencies
  - Copy
    - `.config`, `.local` to home folder
    - Folders in `.local/share/icons` to your `/usr/share/icons`
