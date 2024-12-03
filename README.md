@@ -28,8 +28,8 @@
  <details open>
   <summary>Preview</summary>
      
-  - <img src="/pictures/screenshot.png">
-  -
+   <img src="/pictures/screenshot.png">
+  
   
  </details>
 
